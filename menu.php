@@ -7,10 +7,9 @@
         header("Location: index.php"); 
         exit();
     } else {
-        echo "sucesso";
+        //echo "sucesso";
         //delay(300);
     }
-
 
 
 ?>
@@ -18,7 +17,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Index</title>
+    <title>Menu</title>
 
  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,26 +43,56 @@
                 <a class="navbar-brand" href="#"></a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="index.php">Página Inicial</a></li>
+                <li><a href="index-Logado.php">Página Inicial</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Suporte</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php 
+                    $nome = $_SESSION['email'];
+                    echo "Logado como " . $nome ." ";
+                 ?><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="menu.php">Menu</a>
+                    <li><a href="servidor/deslogado.php">Sair</a></li>
+                </ul>
+              </li>
             </ul>
-
         </nav>
-
 </header>
 
 
+<div class="container" style="padding-bottom: 30px;">
+
+    <div class="row">
+       
+        <div class="col-md-4" style="background-color: #d9d9d9; width: 15%;border-radius: 1rem;">   <!-- Deixa a borda dos conteiners redonda --> 
+             <h3>Menu</h3><br>
+            <a href="#">Opções</a><br>
+            <a href="mensagens.php">Caixa de mensagens</a><br>
+            <a href="meusAnuncios.php">Meus anúncios</a><br>
+            <a href="conta.php">Minha Conta</a><br><br>
+        </div>
+
+        <div class="col-md-6">
+            <div class="container bg-danger" style="border-radius: 1rem">
+                
+
+                <p>TEXTO QUE VAI AQUI</p>
+            </div>
+
+
+        </div>
 
 
 
+    </div>
+</div>
 
 
-
+<br>
 
 
 
