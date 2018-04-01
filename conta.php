@@ -39,7 +39,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="index-Logado.php">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="como-funciona-logado.php">Como funciona</a></li>
                 <li><a href="#">Suporte</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -66,7 +66,28 @@
 
 
 
-<footer>
+<footer style="background-color: #211b23; height: 150px;">
+
+    
+    <div class="container text-center text-md-left">
+        <div class="row" style="padding-top: 20px">
+
+
+            <div class="col-md-4" style="color: white;">
+                <h5 class="text-uppercase mb-4 mt-3 font-weight-bold" >AIM</h5>
+                <p>Alpha Imóveis é um projeto continuo que busca trazer o desejo de se adquirir um imóvel e facilidade, sem exigir custos adicionais por seus serviços.</p>
+            </div>
+            
+
+   
+
+    
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center" style="color:white">
+        © 2018 Copyright:
+        <a href="index.php"> AlphaImoveis </a>
+    </div>
+    <!--/.Copyright-->
 	
 
 

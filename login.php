@@ -1,4 +1,7 @@
+<?php
+     include 'servidor/config.php';
 
+?>
 
 
 <!DOCTYPE html>
@@ -35,7 +38,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="index.php">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="como-funciona.php">Como funciona</a></li>
                 <li><a href="#">Suporte</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

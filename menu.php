@@ -44,7 +44,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="index-Logado.php">Página Inicial</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="como-funciona-logado.php">Como funciona</a></li>
                 <li><a href="#">Suporte</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
