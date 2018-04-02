@@ -82,7 +82,7 @@
     </div>
      <div class="form-group col-md-5">
       <label>Senha</label>
-      <input type="password" id="senha_info" name="senha" class="form-control" placeholder="Senha" required="true" minlength="5">
+      <input type="password" id="senha_info" name="senha" class="form-control" placeholder="Senha" required="true" minlength="5" maxlength="10">
 
 <br>
 
