@@ -3,6 +3,10 @@
 	//$pdo = conectar();
 
 
+
+
+
+
 //$nome = $sobrenome = $idade = $cpf = $cep = $email$ = $senha = "";
 
 
@@ -13,6 +17,8 @@
 	$cep = $_POST['cep'];
 	$email = $_POST['email'];
 	$senha = $_POST['senha'];
+
+$senha = hash('md5', $senha); // encripta a senha no formato md5
 
 try{
 

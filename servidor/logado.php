@@ -5,6 +5,7 @@
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
+$senha = hash('md5', $senha); //encripta a senha no formato md5
 
 $stmt = $pdo->prepare("SELECT * FROM usuario WHERE email = ? and senha = ?");
 $stmt->execute(array($email, $senha));
