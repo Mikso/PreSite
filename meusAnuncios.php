@@ -14,18 +14,25 @@
    
    ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
    <head>
-      <title>Menu</title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Meus Anúncios</title>
+
       <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="dist/css/menu.css">
       <link rel="stylesheet" type="text/css" href="dist/css/footer.css">
 
+
+
+
+
+
+
+
+
+
    </head>
-   <body>
+ <body>
       <header style="padding-top:3%; padding-bottom:3%">
          <nav class="navbar navbar-fixed-top" style="padding-left:0px; padding-right:20px; background-color: navy; ">
             <div class="navbar-header">
@@ -53,8 +60,7 @@
          </nav>
       </header>
 
-
-      <div class="container">
+<div class="container">
       <div class="row">
       <div class="col-sm-3 col-md-3">
          <div class="panel-group" id="accordion">
@@ -91,34 +97,52 @@
                   </div>
                </div>
             </div>
-
-
-       
-
-
-      
-
-
-         
-
          </div>
       </div>
+
+
+
+
+
+
       <div class="col-sm-9 col-md-9">
          <div class="well">
-            <h1>
-               Accordion Menu With Icon
-            </h1>
-            Admin Dashboard Accordion Menu
+           
+
+<div class="container">
+<div class="col-md-6">
+    <div class="form-group">
+        <label>Upload Image</label>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                </span>
+            </span>
+            <input type="text" class="form-control" readonly>
+        </div>
+        <img id='img-upload'/>
+    </div>
+</div>
+</div>
+     
+
+
+
+
+
          </div>
       </div>
 </div>
 </div>
 
+
       <br>
       <br>
 
 
-<!-- Footer -->
+
+      <!-- Footer -->
    <section id="footer" class="align-bottom">
       <div class="container">
          <div class="row text-center text-xs-center text-sm-left text-md-left">
@@ -175,8 +199,12 @@
       </div>
 
 
-      
+
       <script type="text/javascript" src="dist/js/jquery.js"></script>
       <script src="bootstrap/dist/js/bootstrap.js"></script>
+      <script type="text/javascript" src="dist/js/upload.js"></script> 
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
    </body>
 </html>

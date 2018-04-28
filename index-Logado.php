@@ -1,15 +1,18 @@
-<!-- 
-   ESTE É UM MODELO QUE DEVE SER SEGUIDO DURANTE A IMPLEMENTAÇÃO
-   DO PROJETO DE LABORATÓRIO DE SOFTWARE 
-   -->
-<!-- 
-   EM CASO DE HAVER ALGUM ERRO NOS CDNs, TROQUE OU BAIXE OS ARQUIVOS COMPLETOS.
-   ESSAS VERSÕES .min SÃO PARA TRABALHAR NO SERVIDOR, EVITANDO ACUMULO DE DADOS.
-   AO USAR CDNs SAIBA QUE ESTA CIENTE QUE HAVENDO LAG NOS SERVIDORES ONDE ESTÃO 
-   HOSPEDADOS ESSES ARQUIVOS, A APLICAÇÃO NOSSA SOFRERÁ TAMBÉM SEJA COM LAG OU OUTRA
-   COISA.
-   -->
-<!-- PADDING: 20PX  -->
+<?php
+   include 'servidor/config.php';
+   session_start();
+   
+   if( !isset( $_SESSION["email"] ) || !isset( $_SESSION["senha"] ) ) {
+       
+       header("Location: index.php"); 
+       exit();
+   } else {
+       //echo "sucesso";
+       //delay(300);
+   }
+   
+   
+   ?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -27,14 +30,23 @@
                <a class="navbar-brand" href="#"></a>
             </div>
             <ul class="nav navbar-nav">
-               <li><a href="index.php">Página Inicial</a></li>
-               <li><a href="como-funciona.php">Como funciona</a></li>
-               <li><a href="planos.php">Planos</a></li>
-               <li><a href="suporte.php">Suporte</a></li>
+               <li><a href="index-Logado.php">Página Inicial</a></li>
+               <li><a href="como-funciona-logado.php">Como funciona</a></li>
+               <li><a href="planosLogado.php">Planos</a></li>
+               <li><a href="suporteLogado.php">Suporte</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-               <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-               <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php 
+                     $nome = $_SESSION['email'];
+                     echo "Logado como " . $nome ." ";
+                     ?><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="menu.php">Menu</a></li>
+                     <li><a href="servidor/deslogado.php">Sair</a></li>
+                  </ul>
+               </li>
             </ul>
          </nav>
       </header>

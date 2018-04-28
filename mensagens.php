@@ -14,19 +14,18 @@
    
    ?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
    <head>
-      <title>Menu</title>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Caixa de Mensagens</title>
       <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-social.css">
       <link rel="stylesheet" type="text/css" href="dist/css/menu.css">
       <link rel="stylesheet" type="text/css" href="dist/css/footer.css">
 
+
    </head>
    <body>
-      <header style="padding-top:3%; padding-bottom:3%">
+      <header style="padding-top:50px; padding-bottom:30px">
          <nav class="navbar navbar-fixed-top" style="padding-left:0px; padding-right:20px; background-color: navy; ">
             <div class="navbar-header">
                <a class="navbar-brand" href="#"></a>
@@ -54,7 +53,7 @@
       </header>
 
 
-      <div class="container">
+  <div class="container">
       <div class="row">
       <div class="col-sm-3 col-md-3">
          <div class="panel-group" id="accordion">
@@ -93,8 +92,6 @@
             </div>
 
 
-       
-
 
       
 
@@ -111,12 +108,10 @@
             Admin Dashboard Accordion Menu
          </div>
       </div>
+   </div>
 </div>
-</div>
-
       <br>
       <br>
-
 
 <!-- Footer -->
    <section id="footer" class="align-bottom">
@@ -175,7 +170,6 @@
       </div>
 
 
-      
       <script type="text/javascript" src="dist/js/jquery.js"></script>
       <script src="bootstrap/dist/js/bootstrap.js"></script>
    </body>
